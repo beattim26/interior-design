@@ -4,10 +4,17 @@
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
     <title>BRUME interior</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
+    <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden product-2" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden product-3" type="radio" id="product-3" name="toggle">
+    <input class="visually-hidden product-4" type="radio" id="product-4" name="toggle">
+    <div class="site-wrapper">
     <header class="main-header">
+      <div class="container">
       <nav class="main-navigation">
         <ul class="site-nav">
           <li>
@@ -15,32 +22,50 @@
               <img src="img/002-menu.svg" width="26" height="18" alt="Кнопка главного меню">
             </a>
           </li>
+            <div class="main-menu">
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Преимущества</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Наши услуги</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
           <li>
             <a class="main-logo">
               <img src="img/logo.svg" width="98" height="29" alt="Логотип сайта">
             </a>
           </li>
-          <li>+7 (800) 823 48 88</li>
+          <li class="phone-number">+7 (800) 823 48 88</li>
         </ul>
       </nav>
-    </header>
-    <main>
       <section class="slider">
+        <div class="slide-1">
         <h1>Дизайн интерьеров</h1>
         <h2>Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</h2>
         <a class="button">ЗАКАЗАТЬ ДИЗАЙН</a>
+        </div>
         <img src="img/main-image.jpg" width="1163" height="595" alt="Пример дизайна">
-        <div class="slider-social">
-          <ul>
-            <li><a class="vk-social"><span class="visually-hidden">Вконтакте</span></a></li>
-            <li><a class="inst-social"><span class="visually-hidden">Инстаграм</span></a></li>
-            <li><a class="fb-social"><span class="visually-hidden">Фейсбук</span></a></li>
-          </ul>
+        <ul class="slider-social">
+          <li><a class="vk-social"><span>Вконтакте</span></a></li>
+          <li><a class="inst-social"><span>Инстаграм</span></a></li>
+          <li><a class="fb-social"><span>Фейсбук</span></a></li>
+        </ul>
+        <div class="slider-controls">
+          <label for="product-1">Первый</label>
+          <label for="product-2">Второй</label>
+          <label for="product-3">Третий</label>
+          <label for="product-4">Четвертый</label>
         </div>
       </section>
+      </div>
+    </header>
+    <main>
+      <div class="container">
       <section class="features">
         <h1 class="visually-hidden">Наши преимущества</h1>
-        <ul>
+        <ul class="features-list">
           <li>
             <h2>01</h2>
             <h3>Берем весь ремонт на себя</h3>
@@ -95,12 +120,15 @@
           <li>Отделочные работы</li>
           <li>Выезд дизайнера на дом</li>
         </ul>
-        <img src="img/image-service.jpg" width="878" height="390" src="Дизайн коммерческого объекта">
+        <img src="img/image-service.jpg" width="878" height="390" alt="Дизайн коммерческого объекта">
         <h3>Дизайн коммерческих объектов</h3>
         <p>Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интереьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p><span>532 проекта</span>
         <a class="button">Консультация</a>
       </section>
+      </div>
       <article class="about-us">
+        <h1>О студии дизайна BRUME за 2 минуты</h1>
+        <img src="img/about-BRUME.jpg" width="1360" height="595" alt="Видео о студии дизайна BRUME">
       </article>
       <section class="work-steps">
         <h1>Этапы работы</h1>
@@ -134,12 +162,13 @@
       <section class="feedback">
         <h1>Мечтаете об интерьере от BRUME?</h1>
         <p>Оставьте контактные данные, менеджер свяжется с вами в течении 15 минут, для уточнения всех деталей.</p>
-        <form class="feedback-form">
+        <form class="feedback-form" method="get">
           <p class="form-item">
             <input id="feedback-name" type="text" name="login" placeholder="Имя*">
             <input id="feedback-phone" type="text" name="phone" placeholder="Телефон*">
             <input id="feedback-mail" type="text" name="email" placeholder="E-mail">
           </p>
+          <button class="button" type="submit">Отправить</button>
         </form>
         <p>Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
         <img src="img/feedback-img.jpg" width="683" height="683" alt="Дизайн интерьера кухни">
@@ -162,13 +191,14 @@
         <div>
           <img src="img/logo.svg" width="98" height="29" alt="Логотип сайта">
           <ul>
-            <li><a class="vk-social"><span class="visually-hidden">Вконтакте</span></a></li>
-            <li><a class="inst-social"><span class="visually-hidden">Инстаграм</span></a></li>
-            <li><a class="fb-social"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="vk-social"><span>Вконтакте</span></a></li>
+            <li><a class="inst-social"><span>Инстаграм</span></a></li>
+            <li><a class="fb-social"><span>Фейсбук</span></a></li>
           </ul>
         </div>
         <p>HolodnayaDesign</p>
       </section>
     </footer>
+      </div>
   </body>
 </html>
