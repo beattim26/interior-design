@@ -243,28 +243,50 @@ input[type="radio"].visually-hidden {
   font-size: 45px;
 }
 
-.portfolio li:first-child {
-  font-family: 'ralewaysemibold';
-  font-size: 18px;
+.work-type {
+  display: flex;
+  padding: 0;
 }
 
-.portfolio li:nth-child(2),
-.portfolio li:nth-child(3) {
+.work-type li {
+  margin-right: 20px;
   font-family: 'ralewaylight';
   font-size: 18px;
   font-weight: 400;
 }
 
+.work-type li:first-child {
+  font-family: 'ralewaysemibold';
+  font-size: 18px;
+  border-bottom: 1px solid #000000;
+}
+
+.design-list {
+  display: flex;
+  padding: 0;
+}
+
 .portfolio h3 {
+  position: relative;
+  bottom: 550px;
+  width: 150px;
+  margin-left: 25px;
   font-family: 'ralewaysemibold';
   font-size: 16px;
-  color: #000000;
 }
 
 .portfolio span {
+  display: inline-block;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: relative;
+  bottom: 150px;
+  right: 50px;
   font-family: 'mullerultralight';
   font-size: 14px;
-  color: #000000;
 }
 
 .service h1 {
@@ -272,23 +294,54 @@ input[type="radio"].visually-hidden {
   font-size: 45px;
 }
 
+.grid-left {
+  grid-area: left;
+}
+
+.grid-img {
+  grid-area: img;
+}
+
+.grid-right {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 3fr 1fr;
+  grid-area: right;
+}
+
+.service-div {
+  display: grid;
+  grid-template-areas: "left img" "left right";                     
+}
+
+.service ul {
+  padding: 0;
+  width: 200px;
+}
+
 .service li {
+  margin-bottom: 80px;
   font-family: 'ralewaylight';
   font-size: 18px;
 }
 
 .service li:nth-child(3) {
+  width: 230px;
+  padding-left: 30px;
   font-family: 'ralewaysemibold';
   font-size: 18px;
 }
 
 .service h3 {
+  width: 485px;
   font-family: 'playfair_displayregular';
   font-size: 30px;
   font-weight: 500;
 }
 
 .service p {
+  width: 485px;
   font-family: 'ralewaylight';
   font-size: 18px;
   line-height: 30px;
@@ -306,9 +359,23 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.about-us {
+  display: block;
+  position: relative;
+  width: 1360px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .about-us h1 {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: 300px;
+  left: 500px;
   font-family: 'ralewayregular';
   font-size: 18px;
+  color: #ffffff;
 }
 
 .work-steps h1 {
@@ -328,25 +395,71 @@ input[type="radio"].visually-hidden {
   line-height: 25px;
 }
 
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.work-list li {
+  width: 260px;
+  padding: 0 60px 60px 60px;
+}
+
+.feedback {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  width: 1360px;
+}
+
+.feedback-left {
+  padding-left: 100px;
+  background-color: #182c3d;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form p {
+  display: flex;
+  flex-direction: column;
+  width: 475px;
+}
+
 .feedback h1 {
   font-family: 'playfair_display_scbold';
   font-size: 27.06px;
   line-height: 42.28px;
+  color: #ffffff;
 }
 
 .feedback p {
   font-family: 'ralewayregular';
   font-size: 14px;
   line-height: 24px;
+  color: #ffffff;
 }
 
 .feedback button {
   font-family: 'ralewayextrabold';
   font-size: 15px;
   line-height: 16.52px;
+  width: 475px;
+}
+
+.comments {
+  margin: 0 auto;
+  padding: 0;
+  width: 1360px;
 }
 
 .comments h1 {
+  margin: 0 auto;
+  padding: 0 100px 0 100px;
   font-family: 'playfair_display_scbold';
   font-size: 45px;
 }
@@ -368,11 +481,46 @@ input[type="radio"].visually-hidden {
   line-height: 25px;
 }
 
+.clients {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.holodnaya {
+  position: absolute;
+  left: 950px;
+}
+
+.opinion {
+  background-color: #ffffff;
+  width: 655px;
+}
+
 /*FOOTER*/
+
+.main-footer {
+  min-height: 255px;
+  background-color: #182c3d;
+}
+
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 255px;
+}
 
 .main-footer p {
   font-family: 'ralewaysemibold';
   font-size: 16px;
   line-height: 30px;
   color: #f0ba82;
+}
+
+.main-footer ul {
+  display: flex;
+  width: 160px;
+  padding: 0;
+  margin: 0;
 }
