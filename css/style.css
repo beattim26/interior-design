@@ -140,8 +140,13 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   margin: 0;
   margin-top: 20px;
+  margin-bottom: 33px;
   padding: 0;
   padding-top: 20px;
+}
+
+.logo-menu {
+  cursor: pointer;
 }
 
 .main-menu a {
@@ -152,13 +157,40 @@ input[type="radio"].visually-hidden {
   color: #88929b;
 }
 
+.main-logo {
+  position: relative;
+  right: 100px;
+}
+
 .phone-number {
+  position: relative;
   font-family: 'mullerlight';
   font-size: 14px;
   color: #252525;
 }
 
+.phone-number::before {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 15px;
+  background-image: url(../img/phone-receiver.svg);
+  background-repeat: no-repeat;
+  right: 130px;
+}
+
+.slide-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 100px;
+  width: 375px;
+  margin-left: 90px;
+}
+
 .slider h1 {
+  width: 375px;
   font-family: 'playfair_display_scbold';
   font-size: 60.85px;
   line-height: 59.35px;
@@ -176,15 +208,6 @@ input[type="radio"].visually-hidden {
   font-family: 'ralewayextrabold';
   font-size: 14,45px;
   background-color: #f8a25a;
-}
-
-.slide-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: absolute;
-  top: 100px;
-  width: 375px;
 }
 
 .slider-social {
