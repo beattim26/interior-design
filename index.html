@@ -8,13 +8,15 @@
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
-    <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" checked>
-    <input class="visually-hidden product-2" type="radio" id="product-2" name="toggle">
-    <input class="visually-hidden product-3" type="radio" id="product-3" name="toggle">
-    <input class="visually-hidden product-4" type="radio" id="product-4" name="toggle">
     <div class="site-wrapper">
     <header class="main-header">
       <div class="container">
+        <div class="line-1">
+        </div>
+        <div class="line-2">
+        </div>
+        <div class="line-3">
+        </div>
       <nav class="main-navigation">
         <ul class="site-nav">
           <li>
@@ -47,12 +49,18 @@
         <a class="button">ЗАКАЗАТЬ ДИЗАЙН</a>
         </div>
         <img src="img/main-image.jpg" width="1163" height="595" alt="Пример дизайна">
-        <ul class="slider-social">
-          <li><a class="vk-social"><span>Вконтакте</span></a></li>
-          <li><a class="inst-social"><span>Инстаграм</span></a></li>
-          <li><a class="fb-social"><span>Фейсбук</span></a></li>
-        </ul>
+        <div>
+            <ul class="slider-social">
+              <li><a class="inst-social" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+              <li><a class="fb-social" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+              <li><a class="vk-social" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            </ul>
+          </div>
         <div class="slider-controls">
+          <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden product-2" type="radio" id="product-2" name="toggle">
+          <input class="visually-hidden product-3" type="radio" id="product-3" name="toggle">
+          <input class="visually-hidden product-4" type="radio" id="product-4" name="toggle">
           <label for="product-1">Первый</label>
           <label for="product-2">Второй</label>
           <label for="product-3">Третий</label>
@@ -129,7 +137,7 @@
           <div class="grid-right">
             <h3>Дизайн коммерческих объектов</h3>
             <p>Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интереьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p><span>532 проекта</span>
-            <a class="button">Консультация</a>   
+            <a href="#" class="button">Консультация</a>   
           </div>
         </div>
       </section>
@@ -143,27 +151,27 @@
         <h1>Этапы работы</h1>
         <ul class="work-list">
           <li>
-            <h3>Консультация</h3>
+            <h3><b>1</b>Консультация</h3>
             <p>Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем сроки</p>
           </li>
           <li>
-            <h3>Техническое задание</h3>
+            <h3><b>2</b>Техническое задание</h3>
             <p>Составляем техническое задание. Заключаем договор, в котором прописываем все этапы проекта</p>
           </li>
           <li>
-            <h3>Замеры и планировка</h3>
+            <h3><b>3</b>Замеры и планировка</h3>
             <p>Фиксируем размеры стен, окон, плинтусов, дверных проемов для эффективной работы</p>
           </li>
           <li>
-            <h3>Дизайн-концепция</h3>
+            <h3><b>4</b>Дизайн-концепция</h3>
             <p>Создаем концепцию на основе пожеланий клиента, его образов и ощущений, подбираем мебель</p>
           </li>
           <li>
-            <h3>3D Визуализация</h3>
+            <h3><b>5</b>3D Визуализация</h3>
             <p>Создаем 3d визуализацию, собираем пакет чертежей соответсвующий строительным нормам..</p>
           </li>
           <li>
-            <h3>Комплектация интерьера</h3>
+            <h3><b>6</b>Комплектация интерьера</h3>
             <p>Подбираем мебель, отделочные материалы, светильники и текстиль. Декорируем интерьер.</p>
           </li>
         </ul>
@@ -172,16 +180,19 @@
       <section class="feedback">
         <div class="feedback-left">
         <h1>Мечтаете об интерьере от BRUME?</h1>
-        <p>Оставьте контактные данные, менеджер свяжется с вами в течении 15 минут, для уточнения всех деталей.</p>
+        <p class="feedback-item">Оставьте контактные данные, менеджер свяжется с вами в течении 15 минут, для уточнения всех деталей.</p>
         <form class="feedback-form" method="get">
           <p class="form-item">
-            <input id="feedback-name" type="text" name="login" placeholder="Имя*">
-            <input id="feedback-phone" type="text" name="phone" placeholder="Телефон*">
-            <input id="feedback-mail" type="text" name="email" placeholder="E-mail">
+            <label class="visually-hidden" for="feedback-name">Логин</label>
+            <input id="feedback-name" class="name-icon" type="text" name="login" placeholder="Имя*">
+            <label class="visually-hidden" for="feedback-phone">Телефон</label>
+            <input id="feedback-phone" class="phone-icon" type="text" name="phone" placeholder="Телефон*">
+            <label class="visually-hidden" for="feedback-mail">Почта</label>
+            <input id="feedback-mail" class="mail-icon" type="text" name="email" placeholder="E-mail">
           </p>
           <button class="button" type="submit">Отправить</button>
         </form>
-        <p>Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
+        <p class="feedback-item">Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
         </div>
         <img src="img/feedback-img.jpg" width="683" height="683" alt="Дизайн интерьера кухни">
       </section>
@@ -194,14 +205,18 @@
           <h3>Услуга: интерьер детской</h3>
           <p>Спасибо студии за замечательный дизайн для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как мы и хотели. В следующий раз обратимся к BRUME!</p>
           </div>
-          <img class="holodnaya" src="img/holodnaya-photo.png" width="201" height="192" alt="Фотография клиента BRUME">      
+          <img class="holodnaya" src="img/holodnaya-photo.png" width="216" height="192" alt="Фотография клиента BRUME">      
           <img src="img/woman-photo.png" width="201" height="192" alt="Фотография клиента BRUME">
           </div>
-        <div class="clients-controls">
-          <label for="product-1">Первый</label>
-          <label for="product-2">Второй</label>
-          <label for="product-3">Третий</label>
-          <label for="product-4">Четвертый</label>
+        <div class="comment-controls">
+          <input class="visually-hidden product-5" type="radio" id="product-5" name="toggle-2" checked>
+          <input class="visually-hidden product-6" type="radio" id="product-6" name="toggle-2">
+          <input class="visually-hidden product-7" type="radio" id="product-7" name="toggle-2">
+          <input class="visually-hidden product-8" type="radio" id="product-8" name="toggle-2">
+          <label for="product-5">Первый</label>
+          <label for="product-6">Второй</label>
+          <label for="product-7">Третий</label>
+          <label for="product-8">Четвертый</label>
         </div>
       </section>
     </main>
@@ -211,16 +226,16 @@
         <p>BRUME interior, 2018 ©</p>
         <div>
           <img src="img/footer-logo.svg" width="70" height="40" alt="Логотип сайта">
-          <ul>
-            <li><a class="vk-social"><span>Вконтакте</span></a></li>
-            <li><a class="inst-social"><span>Инстаграм</span></a></li>
-            <li><a class="fb-social"><span>Фейсбук</span></a></li>
+          <ul class="footer-social">
+            <li class="vk-social"><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li class="inst-social"><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+            <li class="fb-social"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
           </ul>
         </div>
         <p>HolodnayaDesign</p>
         </div>
       </section>
     </footer>
-      </div>
+    </div>
   </body>
 </html>
