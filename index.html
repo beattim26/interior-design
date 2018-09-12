@@ -5,6 +5,7 @@
     <meta name="format-detection" content="telephone=no">
     <title>BRUME interior</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="only screen and (max-width:768px)" href="css/landscape.css">
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
@@ -23,22 +24,28 @@
         <ul class="site-nav">
           <li>
             <a class="button-menu">
-              <img src="img/002-menu.svg" width="26" height="18" alt="Кнопка главного меню">
+              <picture>
+                <source media="(max-width:768px)" srcset="img/002-menu-768.svg" alt="Логотип сайта">
+                <img src="img/002-menu.svg" width="26" height="18" alt="Кнопка главного меню">
+              </picture>
             </a>
           </li>
             <div class="main-menu">
               <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Преимущества</a></li>
-                <li><a href="#">Портфолио</a></li>
-                <li><a href="#">Наши услуги</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#">ГЛАВНАЯ</a></li>
+                <li><a href="#">ПРЕИМУЩЕСТВА</a></li>
+                <li><a href="#">ПОРТФОЛИО</a></li>
+                <li><a href="#">НАШИ УСЛУГИ</a></li>
+                <li><a href="#">ОТЗЫВЫ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
               </ul>
             </div>
           <li>
             <a class="main-logo">
-              <img src="img/logo.svg" width="98" height="29" alt="Логотип сайта">
+              <picture>
+                <source media="(max-width:768px)" srcset="img/logo-768.svg" alt="Логотип сайта">
+                <img src="img/logo.svg" width="98" height="29" alt="Логотип сайта">
+              </picture>
             </a>
           </li>
           <li class="phone-number">+7 (800) 823 48 88</li>
@@ -107,13 +114,28 @@
         </ul>
         <ul class="design-list">
           <li>
-            <a><img src="img/design-1.jpg" width="257" height="565" alt="Дизайн интерьера гостиной"><h3>Дизайн интерьера гостиной</h3><span>Дизайн интерьера</span></a>
+            <a>
+              <picture>
+                <source media="(max-width:768px)" srcset="img/design-1-768.jpg" alt="Дизайн интерьера гостиной">
+                <img class="design-1" src="img/design-1.jpg" width="257" height="565" alt="Дизайн интерьера гостиной"><h3>Дизайн интерьера гостиной</h3><span>Дизайн интерьера</span>
+              </picture>
+            </a>
           </li>
           <li>
-            <a><img src="img/design-2.jpg" width="392" height="565" alt="Дизайн интерьера гостиной"><h3 class="visually-hidden">Дизайн интерьера гостиной</h3></a>
+            <a>
+              <picture>
+                <source media="(max-width:768px)" srcset="img/design-2-768.jpg" alt="Дизайн интерьера гостиной">
+                <img class="design-2" src="img/design-2.jpg" width="392" height="565" alt="Дизайн интерьера гостиной"><h3 class="visually-hidden">Дизайн интерьера гостиной</h3>
+              </picture>
+            </a>
           </li>
           <li>
-            <a><img src="img/design-3.jpg" width="257" height="565" alt="Дизайн столовой"><h3>Дизайн столовой в стиле «Бохо»</h3><span>Дизайн интерьера</span></a>
+            <a>
+              <picture>
+                <source media="(max-width:768px)" srcset="img/design-3-768.jpg" alt="Дизайн столовой">
+                <img class="design-3" src="img/design-3.jpg" width="257" height="565" alt="Дизайн столовой"><h3>Дизайн столовой в стиле «Бохо»</h3><span>Дизайн интерьера</span>
+              </picture>
+            </a>
           </li>
           <li>
             <a><img src="img/design-4.jpg" width="257" height="565" alt="Лофт интерьер"><h3>Лофт интерьер для отеля Hiloft</h3><span>Дизайн интерьера</span></a>
@@ -134,7 +156,10 @@
             </ul>
           </div>
           <div class="grid-img">
-            <img src="img/image-service.jpg" width="878" height="390" alt="Дизайн коммерческого объекта">
+            <picture>
+              <source media="(max-width:768px)" srcset="img/image-service-768.jpg" alt="Дизайн коммерческого объекта">
+              <img src="img/image-service.jpg" width="878" height="390" alt="Дизайн коммерческого объекта">
+            </picture>
           </div>
           <div class="grid-right">
             <h3>Дизайн коммерческих объектов</h3>
@@ -146,7 +171,10 @@
       </div>
       <article class="about-us">
         <h1>О студии дизайна интерьеров BRUME за 2 минуты</h1>
-        <img src="img/about-BRUME.jpg" width="1360" height="595" alt="Видео о студии дизайна BRUME">
+        <picture>
+          <source media="(max-width:768px)" srcset="img/about-BRUME-768.jpg" alt="Видео о студии дизайна BRUME">
+          <img src="img/about-BRUME.jpg" width="1360" height="595" alt="Видео о студии дизайна BRUME">
+        </picture>
       </article>
       <div class="container">
       <section class="work-steps">
@@ -190,7 +218,7 @@
             <label class="visually-hidden" for="feedback-phone">Телефон</label>
             <input id="feedback-phone" class="phone-icon" type="text" name="phone" placeholder="Телефон*">
             <label class="visually-hidden" for="feedback-mail">Почта</label>
-            <input id="feedback-mail" class="mail-icon" type="text" name="email" placeholder="E-mail">
+            <input id="feedback-mail" class="mail-icon" type="text" name="email" placeholder="E-mail*">
           </p>
           <button class="button" type="submit">ОТПРАВИТЬ</button>
         </form>
@@ -226,7 +254,7 @@
       <section class="main-footer">
         <div class="container">
         <p>BRUME interior, 2018 ©</p>
-        <div>
+        <div class="footer-logo">
           <img src="img/footer-logo.svg" width="70" height="40" alt="Логотип сайта">
           <ul class="footer-social">
             <li class="vk-social"><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>

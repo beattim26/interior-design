@@ -111,6 +111,13 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
+.container {
+  position: relative;
+  width: 1165px;
+  margin: 0 auto;
+  padding: 0 100px 0 100px;
+}
+
 .line-1 {
   position: relative;
 }
@@ -172,13 +179,6 @@ input[type="radio"].visually-hidden {
   background-color: #f1efe9;
 }
 
-.container {
-  position: relative;
-  width: 1165px;
-  margin: 0 auto;
-  padding: 0 100px 0 100px;
-}
-
 .site-nav,
 .main-menu ul,
 .slider ul,
@@ -218,7 +218,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-menu {
-  display: none;
+  display: non;
   position: absolute;
   top: 83px;
   z-index: 6;
@@ -422,6 +422,7 @@ input[type="radio"].visually-hidden {
 
 .features-list {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   padding: 0;
   margin: 0;
@@ -429,10 +430,10 @@ input[type="radio"].visually-hidden {
 }
 
 .features-list li {
-  min-width: 237px;
+  width: 240px;
   padding: 0;
   margin: 0;
-  margin-right: 50px;
+  margin-right: 52px;
 }
 
 .features-list li:first-child h3,
@@ -451,7 +452,7 @@ input[type="radio"].visually-hidden {
 
 .features-list li:nth-child(3) {
   position: relative;
-  right: 5px;
+  right: 1px;
   margin-right: 65px;
 }
 
@@ -464,7 +465,6 @@ input[type="radio"].visually-hidden {
 .features-list li:nth-child(4) h2 {
   bottom: 3px;
 }
-
 
 .features-list h2 {
   position: relative;
