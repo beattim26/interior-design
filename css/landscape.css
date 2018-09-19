@@ -1,13 +1,19 @@
 /*MAIN*/
 
+.body {
+  margin: 0;
+  padding: 0;
+}
+
 .site-wrapper {
+  width: 100%;
   min-width: 768px;
 }
 
 .container {
   position: relative;
   width: 698px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 35px 0 35px;
 }
 
@@ -73,9 +79,13 @@
 .main-menu {
   display: none;
   top: 0;
-  left: 0;
+  left: -35px;
   width: 768px;
   height: 1112px;
+}
+
+.menu-show {
+  display: block;
 }
 
 .main-menu li {
@@ -89,13 +99,14 @@
   color: #d0d4d8;
 }
 
-.main-menu::before {
-  content: '';
+.btn-close {
   position: absolute;
   right: 60px;
   top: 20px;
   width: 42px;
   height: 42px;
+  border: 0;
+  background-color: inherit;
   background: url(../img/close.svg) no-repeat;
   cursor: pointer;
 }
@@ -216,13 +227,17 @@ features-list li {
   margin-right: 105px;
 }
 
-.features-list li:nth-child(4) {
-  right: 1px;
-  bottom: 43px;
+.features-list li:nth-child(2) {
+  left: 0;
 }
 
 .features-list li:nth-child(3) {
   bottom: 47px;
+}
+
+.features-list li:nth-child(4) {
+  right: 1px;
+  bottom: 43px;
 }
 
 .features-list h2 {
@@ -287,7 +302,7 @@ features-list li {
 }
 
 .design-list {
-  right: 40px;
+  left: -40px;
 }
 
 .design-list li {
@@ -431,6 +446,11 @@ features-list li {
 }
 
 .about-us img {
+  width: 768px;
+  height: 812px;
+}
+
+.about-us iframe {
   width: 768px;
   height: 812px;
 }

@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>BRUME interior</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="only screen and (max-width:768px)" href="css/landscape.css">
@@ -30,15 +32,16 @@
               </picture>
             </a>
           </li>
-            <div class="main-menu">
+            <div class="main-menu" id="main-menu">
               <ul>
-                <li><a href="#">ГЛАВНАЯ</a></li>
-                <li><a href="#">ПРЕИМУЩЕСТВА</a></li>
-                <li><a href="#">ПОРТФОЛИО</a></li>
-                <li><a href="#">НАШИ УСЛУГИ</a></li>
-                <li><a href="#">ОТЗЫВЫ</a></li>
-                <li><a href="#">КОНТАКТЫ</a></li>
+                <li><a href="#ex1">ГЛАВНАЯ</a></li>
+                <li><a href="#ex2">ПРЕИМУЩЕСТВА</a></li>
+                <li><a href="#ex3">ПОРТФОЛИО</a></li>
+                <li><a href="#ex4">НАШИ УСЛУГИ</a></li>
+                <li><a href="#ex5">ОТЗЫВЫ</a></li>
+                <li><a href="#ex6">КОНТАКТЫ</a></li>
               </ul>
+              <button class="btn-close"><span class="visually-hidden">Закрыть</span></button>
             </div>
           <li>
             <a class="main-logo">
@@ -51,11 +54,11 @@
           <li class="phone-number">+7 (800) 823 48 88</li>
         </ul>
       </nav>
-      <section class="slider">
+      <section class="slider" id="ex1">
         <div class="slide-1">
         <h1>Дизайн интерьеров</h1>
         <h2>Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</h2>
-        <a class="button">ЗАКАЗАТЬ ДИЗАЙН</a>
+        <a class="button" href="#ex6">ЗАКАЗАТЬ ДИЗАЙН</a>
         </div>
         <img src="img/main-image.jpg" width="1163" height="595" alt="Пример дизайна">
         <div>
@@ -80,7 +83,7 @@
     </header>
     <main>
       <div class="container">
-      <section class="features">
+      <section class="features" id="ex2">
         <h1 class="visually-hidden">Наши преимущества</h1>
         <ul class="features-list">
           <li>
@@ -105,7 +108,7 @@
           </li>
         </ul>
       </section>
-      <section class="portfolio">
+      <section class="portfolio" id="ex3">
         <h1>Портфолио</h1>
         <ul class="work-type">
           <li><a href="#">Все проекты</a></li>
@@ -142,7 +145,7 @@
           </li>
         </ul>
       </section>
-      <section class="service">
+      <section class="service" id="ex4">
         <h1>Наши услуги</h1>
         <div class="service-div">
           <div class="grid-left">
@@ -170,8 +173,9 @@
       </section>
       </div>
       <article class="about-us">
-        <h1>О студии дизайна интерьеров BRUME за 2 минуты</h1>
-        <picture>
+        <iframe src="https://player.vimeo.com/video/32001208?color=ffffff&portrait=0" width="1360" height="595" frameborder="1" id="video-about"></iframe>
+        <picture id="image-about">
+           <h1>О студии дизайна интерьеров BRUME за 2 минуты</h1>
           <source media="(max-width:768px)" srcset="img/about-BRUME-768.jpg" alt="Видео о студии дизайна BRUME">
           <img src="img/about-BRUME.jpg" width="1360" height="595" alt="Видео о студии дизайна BRUME">
         </picture>
@@ -207,7 +211,7 @@
         </ul>
       </section>
         </div>
-      <section class="feedback">
+      <section class="feedback" id="ex6">
         <div class="feedback-left">
         <h1>Мечтаете об интерьере от BRUME?</h1>
         <p class="feedback-item">Оставьте контактные данные, менеджер свяжется с вами в течении 15 минут, для уточнения всех деталей.</p>
@@ -226,7 +230,7 @@
         </div>
         <img src="img/feedback-img.jpg" width="683" height="683" alt="Дизайн интерьера кухни">
       </section>
-      <section class="comments">
+      <section class="comments" id="ex5">
         <h1>Отзывы наших клиентов</h1>
         <div class="clients">
         <img src="img/HIPSTER-facebook.png" width="201" height="192" alt="Фотография клиента BRUME">
@@ -267,5 +271,7 @@
       </section>
     </footer>
     </div>
+    <script src="js/popup.js"></script>
+    <script src="js/other.js"></script>
   </body>
 </html>
